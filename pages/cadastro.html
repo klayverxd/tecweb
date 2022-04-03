@@ -8,34 +8,38 @@
 	</head>
 
 	<body>
-		<h1>Cadastro usuário</h1>
-		<a href="../index.html">voltar para home</a><br /><br />
+		<header>
+			<h1>Cadastro usuário</h1>
+			<a href="../index.html">voltar para home</a><br /><br />
+		</header>
+		<main>
+			<form action="dados.html" method="POST" enctype="multipart/form-data">
+				<label for="nome">Nome:</label>
+				<input type="text" name="nome" id="nome" /><br />
 
-		<form action="pages/dados.html" method="POST" enctype="multipart/form-data">
-			<label for="nome">Nome:</label>
-			<input type="text" name="nome" id="nome" /><br />
+				<label for="cpf">CPF:</label>
+				<input type="text" name="cpf" id="cpf" /><br />
 
-			<label for="cpf">CPF:</label>
-			<input type="text" name="cpf" id="cpf" /><br />
+				<label for="endereco">Endereço:</label>
+				<input type="text" name="endereco" id="endereco" /><br />
 
-			<label for="endereco">Endereço:</label>
-			<input type="text" name="endereco" id="endereco" /><br />
+				<label for="numero-celular">Número celular:</label>
+				<input type="number" name="numero-celular" id="numero-celular" /><br />
 
-			<label for="numero-celular">Número celular:</label>
-			<input type="number" name="numero-celular" id="numero-celular" /><br />
+				<label for="modelo-celular">Modelo do celular:</label>
+				<select id="modelo-celular" name="modelo-celular">
+					<option value="nokia">Nokia</option>
+					<option value="samsung">Samsung</option>
+					<option value="iphone">iPhone</option></select
+				><br />
 
-			<label for="modelo-celular">Modelo do celular:</label>
-			<select id="modelo-celular" name="modelo-celular">
-				<option value="nokia">Nokia</option>
-				<option value="samsung">Samsung</option>
-				<option value="iphone">iPhone</option></select
-			><br />
-
-			<label for="relato-defeito">Relato de defeito:</label>
-			<textarea name="relato-defeito" id="relato-defeito" rows="1"></textarea
-			><br />
-			Imagem: <input type="file" id="foto" name="imagem-aparelho" /><br /><br />
-			<input type="submit" name="enviar" /><br />
-		</form>
+				<label for="relato-defeito">Relato de defeito:</label>
+				<textarea name="relato-defeito" id="relato-defeito" rows="1"></textarea
+				><br />
+				Imagem:
+				<input type="file" id="foto" name="imagem-aparelho" /><br /><br />
+				<input type="submit" name="enviar" /><br />
+			</form>
+		</main>
 	</body>
 </html>
